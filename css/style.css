@@ -1,0 +1,661 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+#body {
+  background: url('../images/bg-image.jpg') fixed no-repeat center center/cover;
+  min-height: 150vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.bg-container {
+  min-height: 150vh;
+  background-color: rgba(111, 113, 119, 0.5);
+}
+
+/* Social Links */
+
+.socials {
+  height: 5vh;
+  background-color: rgba(0, 0, 0, 0.736);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 10vw;
+}
+
+.email {
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.icons img {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-left: 2vh;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.icons img:hover {
+  transform: scale(1.2);
+}
+
+/* Navbar */
+
+#navigation {
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-brand img {
+  height: 6rem;
+  width: 6rem;
+}
+
+.navbar button {
+  margin-right: 2vw;
+  padding-top: 1vw;
+}
+
+#nav-content {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#navbarSupportedContent ul {
+  width: 90vw;
+  justify-content: space-evenly;
+}
+
+#navbarSupportedContent ul li a {
+  color: white;
+  font-size: 2.5vh;
+}
+
+#toggler {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+/* Copyright Section */
+
+#copyright {
+  background-color: rgba(0, 0, 0, 0.736);
+  position: absolute;
+  bottom: 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5vh;
+}
+
+/* Home Page */
+
+/* Video */
+
+#video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  z-index: -10;
+}
+
+#video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  border: 3px solid rgba(0, 0, 0, 0.7);
+}
+
+/* Welcome Title */
+
+#welcome {
+  position: absolute;
+  top: 17vh;
+  left: 0;
+  width: 100vw;
+  height: 73vh;
+  /* background-color: rgba(0, 255, 255, 0.167); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 20vw;
+}
+
+#welcome h1 {
+  font-size: 5vw;
+  font-family: cursive;
+  font-weight: bolder;
+  color: rgb(255, 208, 0);
+}
+
+#welcome h4 {
+  font-size: 2vw;
+  color: white;
+}
+
+/* Infinite Scrollable Text */
+
+marquee {
+  position: absolute;
+  top: 100vh;
+  left: 0;
+}
+
+.infinite-text {
+  display: flex;
+  font-size: 8vw;
+  color: white;
+  font-family: cursive;
+  gap: 5vw;
+}
+
+.dot {
+  height: 3vw;
+  width: 3vw;
+  border-radius: 50%;
+  background-color: rgb(255, 208, 0);
+  margin-top: 2.5vh;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  gap: 5vw;
+}
+
+/* Mini About Us */
+
+.mini-about {
+  position: absolute;
+  top: 125vh;
+  left: 0;
+  /* background-color: rgba(0, 255, 255, 0.192); */
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3vh;
+  margin-bottom: 10vh;
+}
+
+.mini-about h1 {
+  font-size: 4vw;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  color: rgb(255, 208, 0);
+}
+
+.mini-about p {
+  font-size: 2vw;
+  margin-inline-start: 20vw;
+  margin-inline-end: 20vw;
+  font-family: cursive;
+  text-align: center;
+  color: white;
+
+}
+
+.mini-about button a {
+  text-decoration: none;
+  color: black;
+}
+
+.mini-about button {
+  font-size: 1.2vw;
+  border-radius: 20px;
+  background-color: rgb(246, 216, 80);
+  padding: 1vh 2vh;
+  transition: transform 0.3s ease;
+}
+
+.mini-about button:hover {
+  transform: scale(1.1);
+}
+
+/* About Us Page */
+
+.about-us {
+  width: 100vw;
+  display: flex;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  padding-left: 7vw;
+  background-color: rgba(0, 0, 0, 0.515);
+  border-radius: 5px;
+}
+
+.about-us img {
+  height: 60vh;
+  width: 30vw;
+  border-radius: 20px;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 8vw;
+}
+
+.about-text h1 {
+  font-size: 4vw;
+  color: rgb(234, 255, 97);
+  font-family: monospace;
+}
+
+.about-text p {
+  font-size: 1.4vw;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Services Section */
+
+.services {
+  margin-top: 10vh;
+  padding: 5vh 0;
+  /* background-color: rgba(111, 113, 119, 0.5); */
+}
+
+.services-title {
+  font-size: 3.5vw;
+  color: rgb(255, 208, 0);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 4vh;
+}
+
+.service-item {
+  margin-bottom: 4vh;
+}
+
+.service-img {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+  border: 2px solid rgba(255, 208, 0, 0.7);
+  margin-bottom: 2vh;
+}
+
+.service-item h3 {
+  color: white;
+  font-size: 2.5vw;
+  font-family: cursive;
+}
+
+.service-item p {
+  color: white;
+  font-size: 1.5vw;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Contact Us Page */
+
+.contact-section {
+  padding: 5vh 0;
+}
+
+.sidebar {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.contact-form {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 30px;
+}
+
+/* Responsive Layout */
+
+@media (max-width: 768px) {
+  .contact-section {
+    min-height: auto;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    margin-bottom: 20px;
+  }
+}
+
+/* Packages Page */
+
+.packages {
+  padding: 5vh 0;
+}
+
+.packages-title {
+  font-size: 3.5vw;
+  color: rgb(255, 208, 0);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin-bottom: 4vh;
+}
+
+.package-card {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.package-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.package-card h4 {
+  color: #ffc000;
+  font-size: 1.8vw;
+  font-weight: bold;
+}
+
+.package-card p {
+  color: white;
+  font-size: 1.2vw;
+}
+
+.package-card .info {
+  margin-bottom: 10px;
+}
+
+.package-card .price {
+  font-size: 1.6vw;
+  font-weight: bold;
+  color: #ffc000;
+}
+
+.package-card .btn {
+  background-color: #ffc000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.package-card .btn:hover {
+  background-color: #e6b400;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .package-card {
+    margin-bottom: 20px;
+  }
+
+  .package-card img {
+    height: 150px;
+  }
+}
+
+/* Booking Page */
+
+.booking-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 2vh;
+}
+
+.booking-info {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.booking-form {
+  width: 100%;
+  max-width: 500px;
+}
+
+.booking-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.booking-form input,
+.booking-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.booking-form .error-message {
+  color: red;
+  font-size: 0.8rem;
+  display: block;
+  /* margin-top: 2px; */
+}
+
+#specialRequests{
+  width: 100%;
+}
+
+.booking-form button[type="submit"] {
+  background-color: #ffc000;
+  color: white;
+  border: none;
+  margin-top: 10px;
+  margin-left: 40%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.booking-form button[type="submit"]:hover {
+  background-color: #e6b400;
+}
+
+/* Login Page */
+
+.login-register-section {
+  padding: 5vh 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card-container {
+  perspective: 1000px;
+  width: 450px;
+  margin: 0 auto;
+  position: absolute;
+  top: 30vh;
+  left: 35vw;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  /* min-height: 50vh; */
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+
+.card.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.card-face.front {
+  transform: rotateY(0deg);
+}
+
+.card-face.back {
+  transform: rotateY(180deg);
+}
+
+.card-face h2 {
+  color: #ffc000;
+  font-size: 2.5vw;
+  margin-bottom: 20px;
+}
+
+.card-face .form-group {
+  margin-bottom: 15px;
+  width: 90%;
+}
+
+.card-face .form-group label {
+  color: white;
+  font-family: monospace;
+}
+
+.card-face input[type="text"],
+.card-face input[type="email"],
+.card-face input[type="password"],
+.card-face input[type="tel"],
+.card-face input[type="date"],
+.card-face textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  resize: none;
+}
+
+.card-face.front button {
+  background-color: #ffc000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 3.2vw;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-face.back button {
+  background-color: #ffc000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-bottom: 1.5vh;
+  margin-left: 8vw;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-face.back{
+  height: 80vh;
+}
+
+.card-face.front{
+  height: 50vh;
+}
+
+.card-face button:hover {
+  background-color: #e6b400;
+}
+
+.card-face.front .link {
+  color: white;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.card-face.back .link {
+  color: white;
+  text-decoration: none;
+  margin-left: 2.7vw;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.card-face .link:hover {
+  text-decoration: underline;
+}
+
+.flip-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffc000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.flip-btn:hover {
+  background-color: #e6b400;
+}
+
+.card-face .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card-face .col {
+  flex: 1;
+  margin: 0 5px;
+}
+
+.error-message {
+  color: white; 
+  font-size: 0.9rem; 
+  margin-top: 5px;
+  display: block;
+}
