@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pack Your Bags</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        #body {
+            min-height: 100vh;
+        }
+
+        .bg-container {
+            min-height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="body">
+        <div class="bg-container">
+
+            <!-- Social links -->
+            <div class="socials">
+                <div class="email">Email: contact@packyourbags.com</div>
+                <div class="icons">
+                    <img src="images/instagram.png" alt="instagram icon">
+                    <img src="images/facebook.png" alt="facebook icon">
+                    <img src="images/twitter.png" alt="twitter icon">
+                    <img src="images/gmail.png" alt="gmail icon">
+                </div>
+            </div>
+
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg p-0 sticky-top" id="navigation">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html"><img src="./images/logo.png"
+                            alt="PYB Logo"></a>
+                    <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <img src="./images/menu.png" alt="" id="toggler">
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="contact.html">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="packages.html">Packages</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="login.html">Login/Register</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Packages Section -->
+            <div class="packages">
+                <h2 class="packages-title">National Tours</h2>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="package-card">
+                            <img src="images/national-tour-1.jpg" alt="National Tour 1">
+                            <h4>Golden Triangle Tour</h4>
+                            <p class="info">Delhi, Agra, Jaipur</p>
+                            <p class="info">7 Days / 6 Nights</p>
+                            <p class="price">₹25,000/-</p>
+                            <button class="btn" data-tour-name="Golden Triangle Tour" 
+                                    data-duration="7 Days / 6 Nights" 
+                                    data-destinations="Delhi, Agra, Jaipur" 
+                                    onclick="bookTour(this)">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="package-card">
+                            <img src="images/national-tour-2.jpg" alt="National Tour 2">
+                            <h4>Rajasthan Heritage Tour</h4>
+                            <p class="info">Jaipur, Udaipur, Jodhpur</p>
+                            <p class="info">8 Days / 7 Nights</p>
+                            <p class="price">₹30,000/-</p>
+                            <button class="btn" data-tour-name="Rajasthan Heritage Tour" 
+                                    data-duration="8 Days / 7 Nights" 
+                                    data-destinations="Jaipur, Udaipur, Jodhpur" 
+                                    onclick="bookTour(this)">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="package-card">
+                            <img src="images/national-tour-3.jpg" alt="National Tour 3">
+                            <h4>South India Adventure</h4>
+                            <p class="info">Chennai, Bangalore, Kerala</p>
+                            <p class="info">10 Days / 9 Nights</p>
+                            <p class="price">₹40,000/-</p>
+                            <button class="btn" data-tour-name="South India Adventure" 
+                                    data-duration="10 Days / 9 Nights" 
+                                    data-destinations="Chennai, Bangalore, Kerala" 
+                                    onclick="bookTour(this)">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="package-card">
+                            <img src="images/national-tour-4.jpg" alt="National Tour 4">
+                            <h4>North East Escape</h4>
+                            <p class="info">Shillong, Guwahati, Darjeeling</p>
+                            <p class="info">9 Days / 8 Nights</p>
+                            <p class="price">₹35,000/-</p>
+                            <button class="btn" data-tour-name="North East Escape" 
+                                    data-duration="9 Days / 8 Nights" 
+                                    data-destinations="Shillong, Guwahati, Darjeeling" 
+                                    onclick="bookTour(this)">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="package-card">
+                            <img src="images/national-tour-5.jpg" alt="National Tour 5">
+                            <h4>Himalayan Trek</h4>
+                            <p class="info">Manali, Leh, Ladakh</p>
+                            <p class="info">12 Days / 11 Nights</p>
+                            <p class="price">₹50,000/-</p>
+                            <button class="btn" data-tour-name="Himalayan Trek" 
+                                    data-duration="12 Days / 11 Nights" 
+                                    data-destinations="Manali, Leh, Ladakh" 
+                                    onclick="bookTour(this)">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="package-card">
+                            <img src="images/national-tour-6.jpg" alt="National Tour 6">
+                            <h4>Goa Beach Holiday</h4>
+                            <p class="info">Goa Beaches, Water Sports</p>
+                            <p class="info">5 Days / 4 Nights</p>
+                            <p class="price">₹15,000/-</p>
+                            <button class="btn" data-tour-name="Goa Beach Holiday" 
+                                    data-duration="5 Days / 4 Nights" 
+                                    data-destinations="Goa Beaches, Water Sports" 
+                                    onclick="bookTour(this)">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="packages-title mt-5">International Tours</h2>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="package-card">
+                            <img src="images/international-tour-1.jpg" alt="International Tour 1">
+                            <h4>Maldives Island Paradise</h4>
+                            <p class="info">Maldives Beaches, Water Villas</p>
+                            <p class="info">6 Days / 5 Nights</p>
+                            <p class="price">$1,500</p>
+                            <button class="btn" data-tour-name="Maldives Island Paradise" 
+                                    data-duration="6 Days / 5 Nights" 
+                                    data-destinations="Maldives Beaches, Water Villas" 
+                                    onclick="bookTour(this)">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="package-card">
+                            <img src="images/international-tour-2.jpg" alt="International Tour 2">
+                            <h4>Paris Romance</h4>
+                            <p class="info">Eiffel Tower, Louvre Museum</p>
+                            <p class="info">5 Days / 4 Nights</p>
+                            <p class="price">$1,000</p>
+                            <button class="btn" data-tour-name="Paris Romance" 
+                                    data-duration="5 Days / 4 Nights" 
+                                    data-destinations="Eiffel Tower, Louvre Museum" 
+                                    onclick="bookTour(this)">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="package-card">
+                            <img src="images/international-tour-3.jpg" alt="International Tour 3">
+                            <h4>Dubai Desert Safari</h4>
+                            <p class="info">Burj Khalifa, Desert Adventures</p>
+                            <p class="info">7 Days / 6 Nights</p>
+                            <p class="price">$1,800</p>
+                            <button class="btn" data-tour-name="Dubai Desert Safari" 
+                                    data-duration="7 Days / 6 Nights" 
+                                    data-destinations="Burj Khalifa, Desert Adventures" 
+                                    onclick="bookTour(this)">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="package-card">
+                            <img src="images/international-tour-4.jpg" alt="International Tour 4">
+                            <h4>Singapore City Tour</h4>
+                            <p class="info">Gardens by the Bay, Marina Bay Sands</p>
+                            <p class="info">4 Days / 3 Nights</p>
+                            <p class="price">$800</p>
+                            <button class="btn" data-tour-name="Singapore City Tour" 
+                                    data-duration="4 Days / 3 Nights" 
+                                    data-destinations="Gardens by the Bay, Marina Bay Sands" 
+                                    onclick="bookTour(this)">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="package-card">
+                            <img src="images/international-tour-5.jpg" alt="International Tour 5">
+                            <h4>Swiss Alps Adventure</h4>
+                            <p class="info">Zurich, Interlaken, Geneva</p>
+                            <p class="info">8 Days / 7 Nights</p>
+                            <p class="price">$2,500</p>
+                            <button class="btn" data-tour-name="Swiss Alps Adventure" 
+                                    data-duration="8 Days / 7 Nights" 
+                                    data-destinations="Zurich, Interlaken, Geneva" 
+                                    onclick="bookTour(this)">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="package-card">
+                            <img src="images/international-tour-6.jpg" alt="International Tour 6">
+                            <h4>Bali Island Getaway</h4>
+                            <p class="info">Ubud, Kuta, Nusa Dua</p>
+                            <p class="info">6 Days / 5 Nights</p>
+                            <p class="price">$1,200</p>
+                            <button class="btn" data-tour-name="Bali Island Getaway" 
+                                    data-duration="6 Days / 5 Nights" 
+                                    data-destinations="Ubud, Kuta, Nusa Dua" 
+                                    onclick="bookTour(this)">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copright Section -->
+            <div class="container-fluid" id="copyright">
+                <p class="mb-0">© 2024 Pack Your Bags, All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script>
+        function bookTour(button) {
+            const tourName = button.dataset.tourName;
+            const duration = button.dataset.duration;
+            const destinations = button.dataset.destinations;
+
+            // Encode the data before passing it in the URL
+            const encodedTourName = encodeURIComponent(tourName);
+            const encodedDuration = encodeURIComponent(duration);
+            const encodedDestinations = encodeURIComponent(destinations);
+
+            window.location.href = `booking.html?tourName=${encodedTourName}&duration=${encodedDuration}&destinations=${encodedDestinations}`;
+        }
+    </script>
+</body>
+
+</html>
